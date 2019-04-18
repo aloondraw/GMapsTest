@@ -23,7 +23,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { GhostmodePage } from '../pages/ghostmode/ghostmode';
+import { GhostmodePage } from '../pages/ghostmode/ghostmode'
 
 
 
@@ -67,7 +67,8 @@ import { GhostmodePage } from '../pages/ghostmode/ghostmode';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CognitoServiceProvider,
-    SystemVariableProvider
+    SystemVariableProvider,
+  //  Geolocation,
   ]
 })
 export class AppModule {}

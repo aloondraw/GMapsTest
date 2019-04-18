@@ -4,6 +4,7 @@ import { FriendsPage } from "../friends/friends";
 //import { MapPage } from "../map/map";
 import { HomePage } from "../home/home";
 import { ForumPage } from "../forum/forum";
+import { MatchmakingPage } from "../matchmaking/matchmaking";
 
 declare var google;
 
@@ -64,6 +65,12 @@ addInfoWindow(marker, content){
     });
 
   }
+
+  goTo(page) {
+  if(page === 'friends') {
+    this.navCtrl.push(FriendsPage);
+  }
+}
   goTo(page) {
     if(page === 'home') {
       this.navCtrl.push(HomePage);

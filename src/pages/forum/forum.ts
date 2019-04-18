@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MapPage } from "../map/map";
 import { FriendsPage } from "../friends/friends";
 import { HomePage } from "../home/home";
+import { MatchmakingPage } from "../matchmaking/matchmaking";
 /**
  * Generated class for the FriendsPage page.
  *
