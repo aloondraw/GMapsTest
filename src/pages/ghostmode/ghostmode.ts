@@ -14,7 +14,7 @@ import { ForumPage } from "../forum/forum";
 @IonicPage()
 @Component({
   selector: 'page-ghostmode',
-  templateUrl: 'ghostmdoe.html',
+  templateUrl: 'ghostmode.html',
 })
 export class GhostmodePage {
 

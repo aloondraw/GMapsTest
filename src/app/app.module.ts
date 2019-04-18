@@ -23,6 +23,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
+import { GhostmodePage } from '../pages/ghostmode/ghostmode';
 
 
 
@@ -39,7 +40,8 @@ import { ContactPage } from '../pages/contact/contact';
     ProfilePage,
     SettingsPage,
     AboutPage,
-    ContactPage
+    ContactPage,
+    GhostmodePage
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { ContactPage } from '../pages/contact/contact';
     MatchmakingPage,
     SettingsPage,
     AboutPage,
-    ContactPage
+    ContactPage,
+    GhostmodePage
   ],
   providers: [
     StatusBar,
