@@ -25,6 +25,7 @@ import { ForumHomePage } from '../pages/forum-home/forum-home';
 import { AddRoomPage } from '../pages/add-room/add-room';
 import { RoomPage } from '../pages/room/room';
 import { ContactPage } from '../pages/contact/contact';
+import { SignUpPage } from '../pages/sign-up/sign-up';
 
 
 
@@ -44,7 +45,8 @@ import { ContactPage } from '../pages/contact/contact';
     ForumHomePage,
     AddRoomPage,
     RoomPage,
-    ContactPage
+    ContactPage,
+    SignUpPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +67,8 @@ import { ContactPage } from '../pages/contact/contact';
     ForumHomePage,
     AddRoomPage,
     RoomPage,
-    ContactPage
+    ContactPage,
+    SignUpPage
   ],
   providers: [
     StatusBar,
