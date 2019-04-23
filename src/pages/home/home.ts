@@ -23,6 +23,10 @@ export class HomePage {
 
   }
 
+  openUrl(){ window.open('https://www.google.com/maps/d/u/0/edit?mid=1jGkwuLnQI2TL3Z9Z8CZezwppn3NyrhvY&ll=37.786047451909226%2C-81.17544247133333&z=17'); }
+  openUrl2(){ window.open('https://www.google.com/maps/d/u/0/edit?mid=1jGkwuLnQI2TL3Z9Z8CZezwppn3NyrhvY&ll=37.78126575195538%2C-81.18129637099457&z=17'); }
+  openUrl3(){ window.open('https://www.google.com/maps/d/u/0/edit?mid=1jGkwuLnQI2TL3Z9Z8CZezwppn3NyrhvY&ll=37.78516682833857%2C-81.30584487099458&z=17'); }
+
   goTo(page) {
     if(page === 'friends') {
       this.navCtrl.push(FriendsPage);

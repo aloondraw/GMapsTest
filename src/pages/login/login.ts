@@ -24,7 +24,7 @@ export class LoginPage {
       flag = true;
       console.log(res);
     }, err =>{
-      flag = true;    //This is the line that was changed from false ot true
+      flag = false;    //This is the line that was changed from false ot true
       console.log(err);
     });
   }

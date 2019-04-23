@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Sport Vision</ion-title>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 
   <ion-toolbar>
@@ -9,75 +9,85 @@
       &nbsp;Check In
     </button>
   </ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
 </ion-header>
 
 
 
-  <ion-card>
-    <ion-card-content slot="middle">
-    <ion-list>
-  <ion-item>
-    <ion-label>
-      <ion-icon name="star" slot="start"></ion-icon>
-      &nbsp;Favorite Location #1
-    </ion-label>
-  </ion-item>
 
-    <ion-item>
-    <ion-label>
-      <ion-icon name="star" slot="start"></ion-icon>
-      &nbsp;Favorite Location #2
-    </ion-label>
-  </ion-item>
 
-  <ion-item>
-    <ion-label>
-      <ion-icon name="star" slot="start"></ion-icon>
-      &nbsp;Favorite Location #3
-    </ion-label>
-  </ion-item>
-</ion-list>
-</ion-card-content>
-  </ion-card>
+
+
 
 
 
 <ion-content padding>
+
+
+  <ion-list>
+    <ion-list-header>
+    <ion-label><h2>Favorite Locations</h2></ion-label>
+  </ion-list-header>
+    <button ion-button block (click)="openUrl()">
+      <ion-icon name="star"></ion-icon>
+       &nbsp; Babe Ruth
+    </button>
+    <button ion-button block (click)="openUrl2()">
+      <ion-icon name="star"></ion-icon>
+      &nbsp; YMCA
+    </button>
+    <button ion-button block (click)="openUrl3()">
+      <ion-icon name="star"></ion-icon>
+      &nbsp; Lake Stephens
+    </button>
+  </ion-list>
+<br>
+  <ion-list>
+    <ion-list-header>
+    <ion-label><h2>Friends</h2></ion-label>
+  </ion-list-header>
+    <button ion-button block (click)="goTo('friends')">
+      <ion-icon name="person"></ion-icon>
+        &nbsp; Dylan
+    </button>
+    <button ion-button block (click)="goTo('friends')">
+      <ion-icon name="person"></ion-icon>
+        &nbsp; Alondra
+    </button>
+    <button ion-button block (click)="goTo('friends')">
+      <ion-icon name="person"></ion-icon>
+      &nbsp; Ashton
+    </button>
+  </ion-list>
+
   <ion-card>
-    <ion-footer>
+
+  <ion-footer>
+  <ion-row justify-content-center align-items-center>
    <ion-card-content slot="bottom">
    <!-- <ion-tab-bar slot="bottom" role="tablist"> -->
-     <button ion-button (click)="goTo('friends')">
-      <ion-icon name="people"></ion-icon>
-      <ion-label>&nbsp; Friends</ion-label>
-     </button>
+
 
      <button ion-button (click)="goTo('matchmaking')">
        <ion-icon name="basketball"></ion-icon>
-       <ion-label>&nbsp; Matchmaking</ion-label>
      </button>
 
      <button ion-button (click)="goTo('forum')">
       <ion-icon name="paper"></ion-icon>
-      <ion-label>&nbsp; Forums</ion-label>
      </button>
 
      <button ion-button (click)="goTo('map')">
        <ion-icon name="search"></ion-icon>
-       &nbsp;Discover Locations
      </button>
 
      <button ion-button (click)="goTo('profile')">
       <ion-icon name="person"></ion-icon>
-      <ion-label>&nbsp; Profile</ion-label>
      </button>
 
 
     <!-- </ion-tab-bar> -->
    </ion-card-content>
+
+   </ion-row>
    </ion-footer>
-</ion-card>
+ </ion-card>
 </ion-content>

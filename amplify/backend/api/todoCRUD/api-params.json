@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "gmapstest41345633",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "todoCRUD",
+    "apiName": "todoCRUD",
+    "functionArns": [
+        {
+            "lambdaFunction": "gmapstest41345633"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "gmapstest-20190422163743-authRole",
+        "unAuthRoleName": "gmapstest-20190422163743-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "gmapstest41345633",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

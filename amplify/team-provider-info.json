@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "gmapstest-20190422163743-authRole",
+            "UnauthRoleArn": "arn:aws:iam::676453364535:role/gmapstest-20190422163743-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::676453364535:role/gmapstest-20190422163743-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "gmapstest-20190422163743-deployment",
+            "UnauthRoleName": "gmapstest-20190422163743-unauthRole",
+            "StackName": "gmapstest-20190422163743",
+            "StackId": "arn:aws:cloudformation:us-east-2:676453364535:stack/gmapstest-20190422163743/7a788fd0-653e-11e9-b447-0633f2d4cbb0"
+        },
+        "categories": {
+            "auth": {
+                "cognitodc97fa81": {}
+            }
+        }
+    }
+}

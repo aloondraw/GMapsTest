@@ -5,6 +5,7 @@ import { MapPage } from "../map/map";
 import { HomePage } from "../home/home";
 import { ForumPage } from "../forum/forum";
 import { MatchmakingPage } from "../matchmaking/matchmaking";
+import { ProfilePage } from "../profile/profile";
 /**
  * Generated class for the FriendsPage page.
  *
@@ -31,7 +32,7 @@ export class FriendsPage {
     } else if(page === 'home'){
       this.navCtrl.push(HomePage);
     } else if(page === 'profile'){
-      this.navCtrl.push(FriendsPage);
+      this.navCtrl.push(ProfilePage);
     } else if(page === 'matchmaking'){
       this.navCtrl.push(MatchmakingPage);
     }

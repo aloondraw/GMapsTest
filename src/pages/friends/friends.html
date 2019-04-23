@@ -7,13 +7,10 @@
 <ion-header>
 
   <ion-toolbar>
-    <ion-title>Sport Vision</ion-title>
+    <ion-title>Friends</ion-title>
   </ion-toolbar>
 
 
-    <ion-title>
-      Friends
-    </ion-title>
 
 </ion-header>
 
@@ -29,40 +26,51 @@
         <ion-icon name="person" slot="start"></ion-icon>
       <ion-label>
       <ion-icon name="person" slot="start"></ion-icon>
-      &nbsp;Pokémon Yellow
+      &nbsp;Dylan
+      </ion-label>
+      </ion-item>
+<br>
+<ion-item>
+      <ion-label>
+      <ion-icon name="person" slot="start"></ion-icon>
+      &nbsp;Alondra
+      </ion-label>
+      </ion-item>
+<br>
+<ion-item>
+      <ion-label>
+      <ion-icon name="person" slot="start"></ion-icon>
+      &nbsp; Ashton
       </ion-label>
 
     </ion-item>
 
   <ion-footer>
+    <ion-row justify-content-center align-items-center>
  <ion-card-content slot="bottom">
  <!-- <ion-tab-bar slot="bottom" role="tablist"> -->
    <button ion-button (click)="goTo('home')">
     <ion-icon name="home"></ion-icon>
-    <ion-label>&nbsp; Home</ion-label>
    </button>
 
    <button ion-button (click)="goTo('forum')">
     <ion-icon name="paper"></ion-icon>
-    <ion-label>&nbsp; Forums</ion-label>
    </button>
 
    <button ion-button (click)="goTo('matchmaking')">
      <ion-icon name="basketball"></ion-icon>
-     <ion-label>&nbsp; Matchmaking</ion-label>
    </button>
 
    <button ion-button (click)="goTo('map')">
      <ion-icon name="search"></ion-icon>
-     &nbsp;Discover Locations
    </button>
 
-   <button ion-button (click)="goTo('friends')">
+   <button ion-button (click)="goTo('profile')">
     <ion-icon name="person"></ion-icon>
-    <ion-label>&nbsp; Profile</ion-label>
    </button>
   <!-- </ion-tab-bar> -->
  </ion-card-content>
+ </ion-row>
  </ion-footer>
 
 </ion-list>

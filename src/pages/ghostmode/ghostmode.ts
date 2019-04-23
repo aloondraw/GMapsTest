@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { MapPage } from "../map/map";
-//import { FriendsPage } from "../friends/friends";
+import { FriendsPage } from "../friends/friends";
 import { HomePage } from "../home/home";
 import { ForumPage } from "../forum/forum";
+import { MatchmakingPage } from "../matchmaking/matchmaking";
+
 /**
  * Generated class for the FriendsPage page.
  *
