@@ -91,7 +91,7 @@ editPlayer1(player){
             }
         ]
     });
-    prompt.present();       
+    prompt.present();
 }
 
 editPlayer2(player){
@@ -116,10 +116,10 @@ editPlayer2(player){
             }
         ]
     });
-    prompt.present();       
+    prompt.present();
 }
 
-deletePlayer(player){
+deletePlayer1(player){
 
     let index = this.team1.indexOf(player);
 
@@ -140,5 +140,4 @@ deletePlayer2(player){
   ionViewDidLoad() {
     console.log('ionViewDidLoad MatchmakingPage');
   }
-
 }

@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "gmapstest",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authcognitodc97fa81",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

@@ -4,6 +4,8 @@ import { FriendsPage } from "../friends/friends";
 //import { MapPage } from "../map/map";
 import { HomePage } from "../home/home";
 import { ForumPage } from "../forum/forum";
+import { MatchmakingPage } from "../matchmaking/matchmaking";
+import { ProfilePage } from "../profile/profile";
 
 declare var google;
 
@@ -20,9 +22,9 @@ export class MapPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad(){
-    this.loadMap();
-  }
+  //ionViewDidLoad(){
+  //  this.loadMap();
+  //}
 
   loadMap(){
     let coords = new google.maps.LatLng(37.778916, -81.1869202);
@@ -64,6 +66,7 @@ addInfoWindow(marker, content){
     });
 
   }
+
   goTo(page) {
     if(page === 'home') {
       this.navCtrl.push(HomePage);
@@ -72,7 +75,7 @@ addInfoWindow(marker, content){
     } else if(page === 'friends'){
       this.navCtrl.push(FriendsPage);
     } else if(page === 'profile'){
-      this.navCtrl.push(FriendsPage);
+      this.navCtrl.push(ProfilePage);
     } else if(page === 'matchmaking'){
       this.navCtrl.push(MatchmakingPage);
     }

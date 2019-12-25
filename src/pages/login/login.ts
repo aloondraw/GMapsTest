@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { CognitoServiceProvider } from "../../providers/cognito-service/cognito-service";
 
 import { HomePage } from '../home/home';
+import { SignUpPage } from '../sign-up/sign-up';
 
 let flag: boolean = false;
 
@@ -24,7 +25,7 @@ export class LoginPage {
       flag = true;
       console.log(res);
     }, err =>{
-      flag = true;    //This is the line that was changed from false ot true
+      flag = false;
       console.log(err);
     });
   }
@@ -32,6 +33,8 @@ export class LoginPage {
     if(page === 'home' && flag) {
       this.navCtrl.push(HomePage);
     }
-
+    else if(page === 'sign-up'){
+      this.navCtrl.push(SignUpPage);
+    }
   }
 }
